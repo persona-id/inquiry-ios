@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.swift_versions = ['5.0']
 
   # Dependencies
-  s.dependency 'lottie-ios', '~> 3.1.6'
+  s.dependency 'lottie-ios', '~> 3.1.8'
 end
