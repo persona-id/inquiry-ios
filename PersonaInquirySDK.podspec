@@ -9,13 +9,15 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
 
   s.source       = { :http => 'https://github.com/persona-id/inquiry-ios/releases/download/0.11.1/PersonaSDK.framework.zip' }
-  s.vendored_frameworks = 'Persona.framework'
+  s.vendored_frameworks = 'Persona.xcframework'
 
   # 1.7 is needed for `swift_versions` support
   s.cocoapods_version = '>= 1.7.0.beta.1'
   s.swift_versions = ['5.0']
 
+  s.ios.frameworks = 'AVFoundation', 'Vision', 'VisionKit', 'Metal', 'MetalKit', 'MetalPerformanceShaders', 'SafariServices'
+
   # Dependencies
-  s.dependency 'lottie-ios', '~> 3.1.8'
-  s.dependency 'SVGKit', '~> 3.0.0-beta3'
+  s.dependency 'lottie-ios', '3.1.8'
+  s.dependency 'SVGKit', '3.0.0-beta3'
 end
