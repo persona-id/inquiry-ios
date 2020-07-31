@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.platform     = 'ios'
   s.ios.deployment_target = '11.0'
 
-  s.source       = { :http => 'https://github.com/persona-id/inquiry-ios/releases/download/0.11.1/PersonaSDK.framework.zip' }
+  s.source       = { :http => 'https://github.com/persona-id/inquiry-ios/releases/download/0.11.1/PersonaSDK.xcframework.zip' }
   s.vendored_frameworks = 'Persona.xcframework'
 
   # 1.7 is needed for `swift_versions` support
