@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   # Dependencies
   s.dependency 'lottie-ios', '3.1.8'
   s.dependency 'SVGKit', '3.0.0-beta3'
-  s.dependency 'libPhoneNumber-iOS', '1.0.0'
+  s.dependency 'libPhoneNumber-iOS', '0.9.16'
 end
